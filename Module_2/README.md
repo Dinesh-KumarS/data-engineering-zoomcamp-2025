@@ -12,8 +12,6 @@
   
 Ans: 128.3
 
-<img src="https://github.com/Dinesh-KumarS/data-engineering-zoomcamp-2025/blob/main/Module_2/Images/Question_1.png" width="600" height="200"><br>
-
 2) What is the rendered value of the variable `file` when the inputs `taxi` is set to `green`, `year` is set to `2020`, and `month` is set to `04` during execution?
 - `{{inputs.taxi}}_tripdata_{{inputs.year}}-{{inputs.month}}.csv` 
 - `green_tripdata_2020-04.csv`
@@ -36,8 +34,6 @@ FROM `project_id.demo_dataset.yellow_trips_data`
 WHERE EXTRACT(YEAR FROM CAST(tpep_pickup_datetime AS DATE)) = 2020;
 ```
 
-<img src="https://github.com/Dinesh-KumarS/data-engineering-zoomcamp-2025/blob/main/Module_2/Images/Question_3.png" width="800" height="400"><br>
-
 4) How many rows are there for the `Green` Taxi data for all CSV files in the year 2020?
 - 5,327,301
 - 936,199
@@ -51,8 +47,6 @@ SELECT count(*)
 FROM `project_id.demo_dataset.green_trips_data`
 WHERE EXTRACT(YEAR FROM CAST(lpep_pickup_datetime AS DATE)) = 2020;
 ```
-
-<img src="https://github.com/Dinesh-KumarS/data-engineering-zoomcamp-2025/blob/main/Module_2/Images/Question_4.png" width="800" height="400"><br>
 
 5) How many rows are there for the `Yellow` Taxi data for the March 2021 CSV file?
 - 1,428,092
@@ -68,8 +62,6 @@ FROM `project_id.demo_dataset.yellow_trips_data`
 WHERE EXTRACT(YEAR FROM CAST(tpep_pickup_datetime AS DATE)) = 2021
 AND EXTRACT(MONTH FROM CAST(tpep_pickup_datetime AS DATE)) = 03;
 ```
-
-<img src="https://github.com/Dinesh-KumarS/data-engineering-zoomcamp-2025/blob/main/Module_2/Images/Question_5.png" width="800" height="400"><br>
 
 6) How would you configure the timezone to New York in a Schedule trigger?
 - Add a `timezone` property set to `EST` in the `Schedule` trigger configuration  
