@@ -38,7 +38,6 @@ SELECT COUNT(DISTINCT(PULocationID)) FROM PROJECT_ID.demo_dataset.yellow_trips_d
 ```
 
 <br>
-<img src="https://github.com/Dinesh-KumarS/data-engineering-zoomcamp-2025/blob/main/Module_3/Images/Question_2_2.png" width="1000" height="200">
 
 
 ## Question 3:
